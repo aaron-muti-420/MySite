@@ -1,5 +1,13 @@
+// Add a loading tag to the page
+const loadingTag = document.createElement("p");
+loadingTag.textContent = "Loading...";
+document.body.appendChild(loadingTag);
+
 // Wait for the page to fully load before applying JavaScript
 document.addEventListener("DOMContentLoaded", function() {
+  // Remove the loading tag
+  loadingTag.remove();
+
   // Get the Consulting link and its dropdown content
   const consultingLink = document.querySelector(".nav-links .dropdown > a"); // Corrected variable name
   const dropdownContent = document.querySelector(".nav-links .dropdown .dropdown-content");

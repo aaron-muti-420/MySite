@@ -27,7 +27,7 @@ body {
 .logo a {
     text-decoration: none;
     font-size: 35px;
-    color: #f2f2f2;
+    color: #568203;
     letter-spacing: 4px;
     font-weight: bold;
 }
@@ -91,10 +91,14 @@ nav {
 }
 
 .icon .fab {
-    color: #141b47;
+    color: hsl(0, 0%, 100%);
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
+    font-size: 30px;
+}
+.footer-column {
+    color: #568203;
 }
 
 /* Page1 Styles */
@@ -114,7 +118,7 @@ nav {
 .Page1-graph {
     align-items: center;
     flex-basis: 45%;
-    background: #f69f99;
+    background: #4A5D23;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;

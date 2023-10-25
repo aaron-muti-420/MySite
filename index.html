@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your website description">
     <title>Wings-420</title>
@@ -8,10 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,100;1,300;1,400;1,700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e2a8294a5b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .page1-header {
+            background-image: url(founder.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .nav-links ul li a {
+            font-size: 24px;
+        }
+    </style>
 </head>
 <body>
-    <section class="page1-header">
+    <header class="page1-header">
         <nav>
             <div class="logo">
                 <a href="#">AARON MUTI</a>
@@ -22,19 +34,19 @@
                     <li><a href="Page2.html">About Me</a></li>
                     <li class="dropdown">
                         <a href="Page3.html">Consulting</a>
+                    </li>
                     <li><a href="Page4.html">Projects</a></li>
                     <li><a href="Page5.html">Experience</a></li>
                 </ul>
             </div>
         </nav>
-    </section>
-    <div class="centered">
-        <a href="https://calendly.com/aaronmuti/30min" class="button">BOOK A MEETING <br>WITH AARON</a>
-    </div>
-    <section class="Page1">
-        <div>
-            <img src="founder.jpg" alt="Aaron Muti - Founder" style="width: 900px;">
+        <div class="centered-container">
+            <div class="centered" style="text-align: center;">
+                <a href="https://calendly.com/aaronmuti/30min" class="button">BOOK A MEETING <br>WITH AARON</a>
+            </div>
         </div>
+    </header>
+    <section class="Page1">
         <div class="row">
             <div class="Page1-graph">
                 <p><b>Full Name:</b> Muti Aaron Muti<br>
@@ -54,32 +66,33 @@
         frameborder="0"
         allowfullscreen
     ></iframe>
-    <section class="footer">
-        <h4>About Me</h4>
-        <p>We're third year Informatics students at NUST (Namibia University of Science and Technology).</p>
-        <div class="icon">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-pinterest"></i>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Contact Me</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Windhoek, Namibia</li> <br>
+                    <li><i class="fas fa-phone"></i> +264 813421180</li> <br>
+                    <li><i class="fas fa-envelope"></i> aaron@forestdigitalacademy.com</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Me</h4>
+                <div class="icon">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
         </div>
-        <p>Zunda Inc (Pty) Ltd </p>
-        <p> 2023 &#169</p>
-    </section>
+        <div class="footer-bottom">
+            <p>&#169; 2023 Zunda Inc Pty Ltd. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
-
-
-
-    
-    </body>
-</html>
-
-
-
-
-
 
 
 
