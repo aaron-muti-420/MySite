@@ -1,0 +1,164 @@
+/* Define custom font */
+@font-face {
+  font-family: 'wings';
+  src: url('fonts/CuteGorilla.ttf') format('truetype');
+}
+
+/* CSS Variables for theme colors */
+:root {
+  --primary-color: #568202;
+  --secondary-color: #140b47;
+  --background-color: #3d4f50;
+  --button-bg-color: #486939;
+  --button-hover-bg-color: #2c5638;
+  --text-color: #000000;
+  --footer-background-color: #5b1f1f;
+  --icon-color: #fff;
+}
+
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bitter', serif, 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.header-section {
+  background-color: var(--footer-background-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  float: left;
+  line-height: 50px;
+  text-align: left;
+  width: 19%;
+}
+
+.logo a {
+  color: var(--primary-color);
+  font-family: 'wings', sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.nav-links {
+  flex: 1;  
+  text-align: right;
+}
+
+.nav-links ul {
+  list-style: none;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  margin: 4px;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: var(--text-color);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-links ul li:after {
+  background: var(--secondary-color);
+  content: '';
+  display: block;
+  height: 3px;
+  margin: auto;
+  transition: width 0.5s;
+  width: 0;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.button-section {
+  align-items: center;
+  background-image: url('founder.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--button-hover-bg-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.personal-info {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.row {
+  max-width: 800px;
+  width: 100%;
+}
+
+.info-graph {
+  background: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--footer-background-color);
+  padding: 40px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-column {
+  color: var(--primary-color);
+}
+
+.icon .fab {
+  color: var(--icon-color);
+  cursor: pointer;
+  font-size: 29px;
+  margin: 0 13px;
+  padding: 17px 0;
+}
+
+/* ... Rest of your CSS for .Page0, .Page0-graph, .Page1-graph,
